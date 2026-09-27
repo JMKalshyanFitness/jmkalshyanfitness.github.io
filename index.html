@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>JM Kalshyan Fitness | Best Gym in Shamli</title>
+  <meta name="description" content="JM Kalshyan Fitness in Shamli — modern gym equipment, strength training, cardio, personal training and supplements near Bharat International School." />
+  <meta name="keywords" content="JM Kalshyan Fitness, Gym in Shamli, Best Gym Shamli, Boxing Gym Shamli, Boxing Training Shamli, Gym near Bharat International School, Gym near Kachi Garhi, Shamli Fitness, Jony Kumar Gym" />
+  <meta name="author" content="Jony Kumar" />
+
+  <link rel="icon" type="image/png" sizes="512x512" href="/JM-KALSHYAN-FITNESS/favicon.png">
+<link rel="apple-touch-icon" href="/JM-KALSHYAN-FITNESS/favicon.png">
+
+  <meta property="og:title" content="JM Kalshyan Fitness | Best Gym in Shamli" />
+  <meta property="og:description" content="Train hard. Stay consistent. Build strength at JM Kalshyan Fitness, Shamli." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JM Kalshyan Fitness" />
+  <meta property="og:image" content="wide_exterior_gym_promotional_photo_scene_a_brigh.png" />
+
+  <style>
+    :root {
+      --yellow: #facc15;
+      --yellow-dark: #eab308;
+      --black: #080808;
+      --dark: #111111;
+      --card: #171717;
+      --card-2: #1d1d1d;
+      --text: #f5f5f5;
+      --muted: #a3a3a3;
+      --border: rgba(255,255,255,.09);
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: var(--black);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+    img { max-width: 100%; }
+
+    /* TOP BAR */
+    .topbar {
+      background: #050505;
+      border-bottom: 1px solid var(--border);
+      color: #d4d4d4;
+      font-size: .88rem;
+    }
+
+    .topbar-inner {
+      max-width: var(--max);
+      margin: auto;
+      padding: .55rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .topbar a {
+      color: var(--yellow);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    /* NAV */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8,8,8,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: auto;
+      min-height: 72px;
+      padding: .75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      text-decoration: none;
+      min-width: max-content;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid rgba(250,204,21,.4);
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1.05rem;
+      letter-spacing: .2px;
+    }
+
+    .brand small {
+      color: var(--yellow);
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.15rem;
+    }
+
+    .nav-links a {
+      color: #ddd;
+      text-decoration: none;
+      font-size: .92rem;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .nav-links a:hover { color: var(--yellow); }
+
+    .nav-cta {
+      background: var(--yellow);
+      color: #111 !important;
+      padding: .65rem 1rem;
+      border-radius: 8px;
+    }
+
+    .nav-cta:hover { background: var(--yellow-dark); }
+
+    .admin-nav-link {
+      color: var(--yellow) !important;
+      border: 1px solid rgba(250,204,21,.35);
+      padding: .58rem .8rem;
+      border-radius: 8px;
+      font-size: .82rem !important;
+    }
+
+    .admin-nav-link:hover {
+      background: rgba(250,204,21,.08);
+      border-color: var(--yellow);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 9px;
+      background: #111;
+      cursor: pointer;
+      padding: 9px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+
+    .mobile-menu-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .mobile-menu-btn.open span:nth-child(2) { opacity: 0; }
+    .mobile-menu-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    @media (max-width: 850px) {
+      .nav-inner { position: relative; }
+
+      .mobile-menu-btn {
+        display: flex;
+        flex: 0 0 auto;
+        z-index: 1002;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: calc(100% + 1px);
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: .65rem 1rem 1rem;
+        background: rgba(5,5,5,.98);
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 18px 35px rgba(0,0,0,.45);
+        transform: translateY(-12px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+      }
+
+      .nav-links.mobile-open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      .nav-links a,
+      .nav-links a:not(.nav-cta) {
+        display: block;
+        width: 100%;
+        padding: .85rem .75rem;
+        border-bottom: 1px solid rgba(255,255,255,.07);
+        font-size: .95rem !important;
+      }
+
+      .nav-links a:not(.nav-cta)::after { display: none; }
+
+      .admin-nav-link {
+        border: 0;
+        border-bottom: 1px solid rgba(255,255,255,.07);
+        border-radius: 0;
+        padding-left: .75rem !important;
+      }
+
+      .nav-links a:last-child {
+        border-bottom: 0;
+        margin-top: .55rem;
+        text-align: center;
+      }
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 680px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.92) 0%, rgba(0,0,0,.7) 48%, rgba(0,0,0,.42) 100%),
+        url('Header.png') center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 130px;
+      background: linear-gradient(transparent, var(--black));
+    }
+
+    .hero-content {
+      width: min(var(--max), 100%);
+      padding: 6rem 1.25rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--yellow);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .78rem;
+      margin-bottom: 1rem;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--yellow);
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(3rem, 8vw, 6.2rem);
+      line-height: .96;
+      letter-spacing: -3px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span { color: var(--yellow); }
+
+    .hero p {
+      max-width: 650px;
+      color: #d4d4d4;
+      font-size: 1.12rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .8rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 9px;
+      padding: .9rem 1.25rem;
+      transition: transform .2s, background .2s;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: var(--yellow);
+      color: #111;
+    }
+
+    .btn-primary:hover { background: var(--yellow-dark); }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.25);
+      color: #fff;
+      background: rgba(0,0,0,.3);
+    }
+
+    .btn-outline:hover { border-color: var(--yellow); color: var(--yellow); }
+
+    /* STATS */
+    .stats {
+      max-width: var(--max);
+      margin: -55px auto 0;
+      padding: 0 1.25rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(0,0,0,.35);
+    }
+
+    .stat {
+      padding: 1.5rem;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat:last-child { border-right: 0; }
+
+    .stat strong {
+      display: block;
+      color: var(--yellow);
+      font-size: 1.15rem;
+    }
+
+    .stat span { color: var(--muted); font-size: .9rem; }
+
+    /* SECTIONS */
+    section {
+      max-width: var(--max);
+      margin: auto;
+      padding: 6rem 1.25rem;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-kicker {
+      color: var(--yellow);
+      text-transform: uppercase;
+      font-size: .76rem;
+      letter-spacing: 2px;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      margin: .5rem 0 1rem;
+      letter-spacing: -1px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .about-copy, .quote-card {
+      background: linear-gradient(145deg, var(--card), #101010);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+    }
+
+    .about-copy p { color: #c8c8c8; }
+
+    .quote-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-color: rgba(250,204,21,.2);
+    }
+
+    .quote-card .quote-mark {
+      color: var(--yellow);
+      font-size: 4rem;
+      line-height: .5;
+    }
+
+    .quote-card blockquote {
+      font-size: 1.45rem;
+      font-weight: 800;
+      margin: 1rem 0;
+    }
+
+    /* FACILITIES */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(250,204,21,.35);
+    }
+
+    .icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: rgba(250,204,21,.1);
+      color: var(--yellow);
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 { margin: 0 0 .45rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    /* PRICING */
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .price-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      position: relative;
+    }
+
+    .price-card.featured {
+      border-color: var(--yellow);
+      box-shadow: 0 0 0 1px rgba(250,204,21,.15);
+    }
+
+    .popular {
+      position: absolute;
+      right: 14px;
+      top: 14px;
+      background: var(--yellow);
+      color: #111;
+      padding: .25rem .55rem;
+      border-radius: 5px;
+      font-size: .68rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .price-card h3 { margin: 0; }
+    .price {
+      font-size: 2.4rem;
+      font-weight: 900;
+      margin: .5rem 0 1rem;
+    }
+
+    .price span { font-size: .85rem; color: var(--muted); font-weight: 500; }
+
+    .price-card ul {
+      padding-left: 1.15rem;
+      color: #bbb;
+      margin-bottom: 0;
+    }
+
+    .price-card li { margin: .45rem 0; }
+
+    /* GALLERY */
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: .25rem 0 1rem;
+      scrollbar-width: thin;
+      scrollbar-color: var(--yellow) #222;
+    }
+
+    .gallery img {
+      width: 330px;
+      height: 390px;
+      border-radius: 14px;
+      object-fit: cover;
+      flex: 0 0 auto;
+      border: 1px solid var(--border);
+    }
+
+    /* SUPPLEMENTS */
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 650px;
+      background: var(--card);
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: #202020;
+      color: var(--yellow);
+      font-size: .85rem;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    /* CONTACT */
+    .contact-box {
+      background:
+        linear-gradient(120deg, rgba(250,204,21,.12), rgba(250,204,21,0)),
+        var(--card);
+      border: 1px solid rgba(250,204,21,.2);
+      border-radius: 18px;
+      padding: 2.25rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: .7rem;
+      color: #ccc;
+    }
+
+    .contact-list strong { color: #fff; }
+    .contact-list a { color: var(--yellow); text-decoration: none; font-weight: 700; }
+
+    /* FOOTER */
+    footer {
+      background: #050505;
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.25rem;
+      color: #777;
+      text-align: center;
+      font-size: .85rem;
+    }
+
+    footer strong { color: #bbb; }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+      .hero { min-height: 600px; }
+      .hero h1 { letter-spacing: -2px; }
+
+      .about-grid,
+      .contact-box { grid-template-columns: 1fr; }
+
+      .cards,
+      .pricing { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .topbar-inner { justify-content: center; text-align: center; }
+      .topbar-inner span { display: none; }
+
+      .nav-inner { min-height: 64px; }
+      .brand img { width: 42px; height: 42px; }
+      .brand strong { font-size: .92rem; }
+
+      .hero { min-height: 590px; }
+      .hero-content { padding: 5rem 1.1rem; }
+      .hero h1 { font-size: 3.25rem; }
+      .hero p { font-size: 1rem; }
+
+      .stats-grid { grid-template-columns: 1fr; }
+      .stat { border-right: 0; border-bottom: 1px solid var(--border); }
+      .stat:last-child { border-bottom: 0; }
+
+      section { padding: 4.5rem 1.1rem; }
+
+      .cards,
+      .pricing { grid-template-columns: 1fr; }
+
+      .gallery img {
+        width: 280px;
+        height: 330px;
+      }
+
+      .contact-box { padding: 1.5rem; }
+    }
+
+
+    /* Clickable facility explanations */
+    .facility-card {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .facility-card:focus-visible {
+      outline: 2px solid var(--yellow);
+      outline-offset: 3px;
+    }
+
+    .facility-card .card-more {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      margin-top: 0;
+      transition: max-height .35s ease, opacity .3s ease, margin-top .35s ease;
+    }
+
+    .facility-card.open .card-more {
+      max-height: 220px;
+      opacity: 1;
+      margin-top: 1rem;
+    }
+
+    .facility-card .card-more p {
+      color: #c8c8c8;
+      font-size: .9rem;
+      margin: 0;
+      padding-top: .9rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .facility-card .click-hint {
+      display: inline-block;
+      margin-top: .8rem;
+      color: var(--yellow);
+      font-size: .74rem;
+      font-weight: 800;
+      letter-spacing: .5px;
+      transition: transform .25s ease;
+    }
+
+    .facility-card.open .click-hint {
+      transform: rotate(180deg);
+    }
+
+    /* ===== ADVANCED GYM WEBSITE EFFECTS ===== */
+    html { scroll-padding-top: 90px; }
+
+    body {
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(250,204,21,.055), transparent 28%),
+        radial-gradient(circle at 88% 38%, rgba(250,204,21,.035), transparent 30%),
+        var(--black);
+    }
+
+    ::selection { background: var(--yellow); color: #111; }
+
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: var(--yellow);
+      box-shadow: 0 0 14px rgba(250,204,21,.55);
+      z-index: 3000;
+    }
+
+    .navbar.scrolled {
+      box-shadow: 0 12px 35px rgba(0,0,0,.4);
+      background: rgba(5,5,5,.98);
+    }
+
+    .nav-links a { position: relative; }
+    .nav-links a:not(.nav-cta)::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: var(--yellow);
+      transition: width .25s ease;
+    }
+    .nav-links a:not(.nav-cta):hover::after { width: 100%; }
+
+    .hero {
+      min-height: 760px;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.73) 45%, rgba(0,0,0,.38) 100%),
+        url('Header.png') center/cover no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 0 45%, rgba(250,204,21,.07) 55%, transparent 70%);
+      animation: heroSweep 10s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes heroSweep {
+      from { transform: translateX(-12%); }
+      to { transform: translateX(12%); }
+    }
+
+    .hero-content { animation: heroEnter .9s ease both; }
+
+    @keyframes heroEnter {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .eyebrow { animation: glowPulse 2.8s ease-in-out infinite; }
+
+    @keyframes glowPulse {
+      0%,100% { text-shadow: 0 0 0 rgba(250,204,21,0); }
+      50% { text-shadow: 0 0 18px rgba(250,204,21,.35); }
+    }
+
+    .hero h1 { text-shadow: 0 10px 35px rgba(0,0,0,.55); }
+    .hero h1 span { text-shadow: 0 0 30px rgba(250,204,21,.18); }
+
+    .stats-grid {
+      grid-template-columns: repeat(4, 1fr);
+      backdrop-filter: blur(12px);
+      background: rgba(23,23,23,.92);
+    }
+
+    .stat { position: relative; overflow: hidden; transition: transform .25s ease; }
+    .stat::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, transparent, rgba(250,204,21,.08), transparent);
+      transform: translateX(-110%);
+      transition: transform .7s ease;
+    }
+    .stat:hover { transform: translateY(-2px); }
+    .stat:hover::after { transform: translateX(110%); }
+
+    .feature-banner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.25rem 2rem;
+    }
+
+    .feature-banner-inner {
+      min-height: 390px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(250,204,21,.2);
+      border-radius: 20px;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.94), rgba(0,0,0,.62), rgba(0,0,0,.18)),
+        url('wide_exterior_gym_promotional_photo_scene_a_brigh.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 3rem;
+      box-shadow: 0 25px 70px rgba(0,0,0,.28);
+    }
+
+    .feature-banner-content { max-width: 600px; position: relative; z-index: 2; }
+    .feature-banner h2 { margin: .45rem 0 1rem; font-size: clamp(2rem,4vw,3.4rem); }
+    .feature-banner p { color: #d1d1d1; max-width: 550px; }
+
+    .feature-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
+      margin: 1.3rem 0 1.6rem;
+    }
+
+    .feature-badge {
+      border: 1px solid rgba(250,204,21,.25);
+      background: rgba(0,0,0,.42);
+      color: #eee;
+      padding: .45rem .7rem;
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 800;
+    }
+    .feature-badge b { color: var(--yellow); }
+
+    .card, .price-card {
+      transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+    }
+
+    .card { position: relative; overflow: hidden; }
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      right: -55px;
+      top: -55px;
+      border-radius: 50%;
+      background: rgba(250,204,21,.06);
+      transition: transform .35s ease;
+    }
+    .card:hover::before { transform: scale(1.6); }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,.25);
+    }
+
+    .boxing-card {
+      border-color: rgba(250,204,21,.38);
+      background: linear-gradient(145deg, rgba(250,204,21,.08), transparent 45%), var(--card);
+    }
+
+    .section-divider {
+      height: 1px;
+      max-width: var(--max);
+      margin: 0 auto;
+      background: linear-gradient(90deg, transparent, rgba(250,204,21,.35), transparent);
+    }
+
+    .gallery img {
+      transition: transform .35s ease, border-color .35s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.02);
+      border-color: rgba(250,204,21,.45);
+    }
+
+    .price-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(250,204,21,.4);
+      box-shadow: 0 18px 40px rgba(0,0,0,.28);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .floating-call {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1200;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      background: var(--yellow);
+      color: #111;
+      font-size: 1.2rem;
+      font-weight: 900;
+      box-shadow: 0 12px 30px rgba(0,0,0,.4);
+      animation: floatCall 2.8s ease-in-out infinite;
+    }
+
+    @keyframes floatCall {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+
+    @media (max-width: 850px) {
+      .boxing-grid { grid-template-columns: 1fr; }
+      .boxing-visual { min-height: 330px; }
+    }
+
+    @media (max-width: 600px) {
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .feature-banner-inner { padding: 1.6rem; min-height: 430px; }
+      .boxing-list { grid-template-columns: 1fr; }
+      .boxing-visual { min-height: 300px; }
+      .floating-call { width: 50px; height: 50px; right: 14px; bottom: 14px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+
+    /* ===== MEMBER FEE PORTAL ===== */
+    .member-portal {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(250,204,21,.08), transparent 28%),
+        linear-gradient(145deg, #121212, #090909);
+      border: 1px solid rgba(250,204,21,.22);
+      border-radius: 20px;
+      padding: 2.2rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,.28);
+    }
+
+    .member-portal-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .member-form {
+      background: rgba(0,0,0,.28);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.4rem;
+    }
+
+    .member-form label {
+      display: block;
+      color: #ddd;
+      font-size: .85rem;
+      font-weight: 800;
+      margin-bottom: .45rem;
+    }
+
+    .member-form input {
+      width: 100%;
+      border: 1px solid rgba(255,255,255,.15);
+      background: #0b0b0b;
+      color: #fff;
+      border-radius: 9px;
+      padding: .85rem 1rem;
+      font: inherit;
+      outline: none;
+      margin-bottom: 1rem;
+    }
+
+    .member-form input:focus {
+      border-color: var(--yellow);
+      box-shadow: 0 0 0 3px rgba(250,204,21,.08);
+    }
+
+    .member-form small {
+      display: block;
+      color: #888;
+      margin-top: -.65rem;
+      margin-bottom: 1rem;
+      font-size: .76rem;
+    }
+
+    .member-result {
+      min-height: 260px;
+      background: #0c0c0c;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .member-result.empty {
+      color: #888;
+      text-align: center;
+    }
+
+    .member-result .result-label {
+      color: var(--yellow);
+      font-size: .72rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 900;
+    }
+
+    .member-result h3 {
+      margin: .35rem 0 1rem;
+      font-size: 1.7rem;
+    }
+
+    .member-status {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      width: fit-content;
+      padding: .45rem .7rem;
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 900;
+      margin-bottom: 1.1rem;
+    }
+
+    .member-status.paid {
+      background: rgba(34,197,94,.12);
+      border: 1px solid rgba(34,197,94,.35);
+      color: #86efac;
+    }
+
+    .member-status.due {
+      background: rgba(239,68,68,.12);
+      border: 1px solid rgba(239,68,68,.35);
+      color: #fca5a5;
+    }
+
+    .member-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .8rem;
+    }
+
+    .member-detail {
+      background: #151515;
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 10px;
+      padding: .75rem;
+    }
+
+    .member-detail span {
+      display: block;
+      color: #888;
+      font-size: .72rem;
+      margin-bottom: .2rem;
+    }
+
+    .member-detail strong {
+      display: block;
+      color: #eee;
+      font-size: .92rem;
+    }
+
+    .member-error {
+      color: #fca5a5;
+      background: rgba(239,68,68,.08);
+      border: 1px solid rgba(239,68,68,.22);
+      border-radius: 10px;
+      padding: .8rem;
+      font-size: .86rem;
+    }
+
+    .member-note {
+      margin-top: 1rem;
+      color: #888;
+      font-size: .76rem;
+      line-height: 1.5;
+    }
+
+    .config-warning {
+      margin-top: 1rem;
+      padding: .8rem;
+      border-radius: 10px;
+      background: rgba(250,204,21,.08);
+      border: 1px solid rgba(250,204,21,.2);
+      color: #d4d4d4;
+      font-size: .8rem;
+    }
+
+    @media (max-width: 800px) {
+      .member-portal-grid { grid-template-columns: 1fr; }
+      .member-portal { padding: 1.3rem; }
+    }
+
+    @media (max-width: 480px) {
+      .member-details { grid-template-columns: 1fr; }
+    }
+
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "JM Kalshyan Fitness",
+  "alternateName": "JM Kalshyan Fitness Shamli",
+  "url": "https://anshulkhatiyan0407.github.io/JM-KALSHYAN-FITNESS/"
+}
+</script>
+</head>
+
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <a class="floating-call" href="tel:8650391978" aria-label="Call JM Kalshyan Fitness">☎</a>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>📍 Kachi Garhi, Shamli • Near Bharat International School</span>
+      <a href="tel:8650391978">📞 8650391978</a>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="brand">
+        <img src="favicon.png" alt="JM Kalshyan Fitness logo" />
+        <div>
+          <strong>JM Kalshyan Fitness</strong>
+          <small>Shamli • Fitness & Strength</small>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#facilities">Facilities</a>
+        <a href="#fees">Membership</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#supplements">Supplements</a>
+        <a href="admin.html" class="admin-nav-link">Admin Login</a>
+        <a href="#contact" class="nav-cta">Contact Us</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button"
+              aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="home">
+
+    <header class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Train • Transform • Repeat</div>
+        <h1>Train Hard.<br><span>Become Stronger.</span></h1>
+        <p>
+          Shamli's training destination for strength, cardio, personal training and now boxing.
+          Build discipline, improve your fitness and keep progressing.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#member-status">Check Fee Status →</a>
+          <a class="btn btn-outline" href="https://maps.app.goo.gl/kJbjvxd15yig2YH39?g_st=awb" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="stats">
+      <div class="stats-grid">
+        <div class="stat">
+          <strong>4 AM – 9 AM</strong>
+          <span>Morning Training</span>
+        </div>
+        <div class="stat">
+          <strong>3 PM – 10 PM</strong>
+          <span>Evening Training</span>
+        </div>
+        <div class="stat">
+          <strong>Mon – Sat</strong>
+          <span>Open 6 Days a Week</span>
+        </div>
+        <div class="stat">
+          <strong>BOXING</strong>
+          <span>Punching Bag Training</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-banner reveal">
+      <div class="feature-banner-inner">
+        <div class="feature-banner-content">
+          <div class="section-kicker">Welcome to JM Kalshyan Fitness</div>
+          <h2>One gym. Multiple ways to get stronger.</h2>
+          <p>
+            Train with strength equipment, cardio, personal training and our new boxing area
+            with punching bags — all under one roof.
+          </p>
+          <div class="feature-badges">
+            <span class="feature-badge"><b>01</b> Strength</span>
+            <span class="feature-badge"><b>02</b> Cardio</span>
+            <span class="feature-badge"><b>03</b> Boxing</span>
+            <span class="feature-badge"><b>04</b> Personal Training</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="section-heading">
+        <div class="section-kicker">About the gym</div>
+        <h2>More than a workout. It's your routine.</h2>
+        <p>A straightforward place to train consistently, improve your strength and stay committed to your goals.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            At <strong>JM Kalshyan Fitness</strong>, we believe your only limit is you.
+            Whether you're starting your fitness journey or working toward the next level,
+            our goal is to give you a comfortable, focused environment to train.
+          </p>
+          <p>
+            From weight training and cardio to personal training and everyday fitness
+            essentials, everything is built around one simple idea:
+            <strong>show up, work hard and keep progressing.</strong>
+          </p>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">“</div>
+          <blockquote>Discipline is the bridge between goals and results.</blockquote>
+          <span style="color:var(--yellow);font-weight:800;">JM Kalshyan Fitness</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities">
+      <div class="section-heading">
+        <div class="section-kicker">Why train here</div>
+        <h2>Everything you need to train.</h2>
+        <p>Designed for regular training — whether your goal is strength, fitness or consistency.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card facility-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="icon">🏋️</div>
+          <h3>Strength Training</h3>
+          <p>Dedicated weight-training space and modern gym equipment for your daily workouts.</p>
+          <span class="click-hint">CLICK TO LEARN MORE ↓</span>
+          <div class="card-more">
+            <p>Build your foundation with regular resistance training and progressive workouts. The dedicated weight area gives you space for strength-focused sessions. You can work different muscle groups through a structured routine. Consistent strength training can support muscle development, endurance and overall fitness. Ask the trainer for help choosing exercises that match your current level.</p>
+          </div>
+        </div>
+
+        <div class="card facility-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="icon">🏃</div>
+          <h3>Cardio Zone</h3>
+          <p>Treadmill and cycling options to support your cardio and conditioning sessions.</p>
+          <span class="click-hint">CLICK TO LEARN MORE ↓</span>
+          <div class="card-more">
+            <p>Use the cardio area for warm-ups, conditioning or dedicated cardiovascular sessions. Treadmill work can be adjusted to your preferred walking or running pace. Cycling gives you another option for steady-state training. Cardio can also be added between strength sessions when you want to increase overall activity. Start at a comfortable intensity and build gradually.</p>
+          </div>
+        </div>
+
+        <div class="card facility-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="icon">🎯</div>
+          <h3>Personal Training</h3>
+          <p>Personal training options for members who want additional guidance and structure.</p>
+          <span class="click-hint">CLICK TO LEARN MORE ↓</span>
+          <div class="card-more">
+            <p>Personal training is useful when you want a more structured approach to your workouts. A trainer can help you understand exercise technique and organize your sessions. Your routine can be adjusted around your current fitness level and goals. Guidance can also help you stay consistent and make better use of your training time. Speak with the gym team to discuss the available personal-training options.</p>
+          </div>
+        </div>
+
+        <div class="card facility-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="icon">🥊</div>
+          <h3>Boxing & Punching Bags</h3>
+          <p>Dedicated punching bags for boxing practice, conditioning, footwork and high-intensity training.</p>
+          <span class="click-hint">CLICK TO LEARN MORE ↓</span>
+          <div class="card-more">
+            <p>Our new punching bags add boxing-based training to the gym. Bag work can be used for combinations, movement, conditioning and high-intensity rounds. It is also a practical way to add variety to a regular strength workout. Focus on controlled technique, footwork and proper form rather than simply hitting harder. Ask the gym team about using the boxing area safely and effectively.</p>
+          </div>
+        </div>
+
+        <div class="card facility-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="icon">💧</div>
+          <h3>RO Water</h3>
+          <p>RO purified drinking water available at the gym for your training sessions.</p>
+          <span class="click-hint">CLICK TO LEARN MORE ↓</span>
+          <div class="card-more">
+            <p>Hydration is an important part of any training session. RO purified drinking water is available at the gym for members. Keeping water nearby makes it easier to maintain regular hydration while exercising. Bring your bottle and refill it when needed. Especially during longer or more intense sessions, remember to take suitable water breaks.</p>
+          </div>
+        </div>
+
+        <div class="card facility-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="icon">🥤</div>
+          <h3>Supplements</h3>
+          <p>Fitness supplements and accessories available at the gym's supplement shop.</p>
+          <span class="click-hint">CLICK TO LEARN MORE ↓</span>
+          <div class="card-more">
+            <p>The gym has a supplement shop with selected fitness products and accessories. Available products can include creatine, pre-workout, protein products, gainers, BCAA and shakers. Stock, flavours and prices can change, so members can ask at the front desk for current availability. Supplements should complement a consistent training and nutrition routine rather than replace it. Ask the gym team for the products currently in stock.</p>
+          </div>
+        </div>
+
+        <div class="card facility-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="icon">💪</div>
+          <h3>Cupping Therapy</h3>
+          <p>Cupping therapy is available as an additional service at the gym.</p>
+          <span class="click-hint">CLICK TO LEARN MORE ↓</span>
+          <div class="card-more">
+            <p>Cupping therapy is available as an additional service at JM Kalshyan Fitness. Members interested in the service can ask the gym team about availability and the process. It can be considered as an optional part of a broader recovery routine. Individual suitability can vary, so discuss any concerns with an appropriate qualified professional. The gym can provide details about the service currently offered.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fees">
+      <div class="section-heading">
+        <div class="section-kicker">Membership</div>
+        <h2>Simple membership plans.</h2>
+        <p>Choose a duration that fits your training routine.</p>
+      </div>
+
+      <div class="pricing">
+        <div class="price-card">
+          <h3>1 Month</h3>
+          <div class="price">₹600 <span>/ month</span></div>
+          <ul>
+            <li>Gym access</li>
+            <li>Morning & evening timings</li>
+            <li>Monday to Saturday</li>
+          </ul>
+        </div>
+
+        <div class="price-card featured">
+          <h3>3 Months</h3>
+          <div class="price">₹1,500 <span>/ plan</span></div>
+          <ul>
+            <li>Gym access</li>
+            <li>Morning & evening timings</li>
+            <li>Monday to Saturday</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h3>6 Months</h3>
+          <div class="price">₹2,500 <span>/ plan</span></div>
+          <ul>
+            <li>Gym access</li>
+            <li>Morning & evening timings</li>
+            <li>Monday to Saturday</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="color:var(--muted);font-size:.85rem;margin-top:1rem;">
+        Sunday: Closed
+      </p>
+    </section>
+
+
+    <section id="member-status">
+      <div class="section-heading">
+        <div class="section-kicker">Member Portal</div>
+        <h2>Check your membership fee.</h2>
+        <p>Enter your Name and registered mobile number.</p>
+      </div>
+
+      <div class="member-portal">
+        <div class="member-portal-grid">
+          <div class="member-form">
+            <label for="memberName">Name <span style="color:#777;font-weight:500;">(Optional)</span></label>
+            <input id="memberName" type="text" placeholder="Example: Alex V " maxlength="100" autocomplete="name">
+
+            <label for="memberMobile">Registered mobile number <span style="color:var(--yellow);">*</span></label>
+            <input id="memberMobile" type="tel" inputmode="numeric" placeholder="Enter your 10-digit mobile number" maxlength="10" autocomplete="tel">
+            <small>Mobile number is required. Name is optional, but entering both gives an extra match check.</small>
+
+            <button class="btn btn-primary" id="checkMemberBtn" type="button" style="width:100%;">
+              Check Fee Status →
+            </button>
+
+            <div class="config-warning" id="memberConfigWarning" hidden>
+              The member portal still needs the database connection to be configured. Follow the setup steps provided with this website.
+            </div>
+
+            <p class="member-note">
+              Your mobile number is required to check your fee. You may also enter your name for an additional match check.
+              Your JM Member ID is shown in your result.
+            </p>
+          </div>
+
+          <div class="member-result empty" id="memberResult">
+            Enter your name and registered mobile number to check your current membership status.
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-heading">
+        <div class="section-kicker">Inside JM Kalshyan Fitness</div>
+        <h2>See the space.</h2>
+        <p>Take a look at the gym, equipment and training environment.</p>
+      </div>
+
+      <div class="gallery" id="galleryScroll">
+        <img src="gym1.jpg" alt="JM Kalshyan Fitness gym interior" loading="lazy">
+        <img src="gym2.jpg" alt="JM Kalshyan Fitness equipment" loading="lazy">
+        <img src="gym3.jpg" alt="JM Kalshyan Fitness training area" loading="lazy">
+        <img src="gym4.jpg" alt="JM Kalshyan Fitness gym facilities" loading="lazy">
+      </div>
+    </section>
+
+    <section id="supplements">
+      <div class="section-heading">
+        <div class="section-kicker">Fitness essentials</div>
+        <h2>Supplements available.</h2>
+        <p>Ask at the front desk for current stock, flavours and availability.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Creatine</td>
+            <td>Wellcore</td>
+            <td>₹900</td>
+            <td>Flavoured & Unflavoured</td>
+          </tr>
+          <tr>
+            <td>Pre-Workout</td>
+            <td>Karnage (Big Muscles)</td>
+            <td>₹1,200</td>
+            <td>Energy + Focus</td>
+          </tr>
+          <tr>
+            <td>Pre-Workout</td>
+            <td>Muscle Garage</td>
+            <td>₹800</td>
+            <td>Budget Pre-workout</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>Multiple Brands</td>
+            <td>Varies</td>
+            <td>Ask at front desk</td>
+          </tr>
+          <tr>
+            <td>Others</td>
+            <td>L-Carnitine, BCAA, Gainers, Shakers</td>
+            <td>Varies</td>
+            <td>Ask for availability</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-box">
+        <div>
+          <div class="section-kicker">Find us</div>
+          <h2 style="margin-top:.4rem;">Ready to start training?</h2>
+
+          <div class="contact-list">
+            <div>📍 <strong>Address:</strong> Kachi Garhi, Shamli, UP 247776</div>
+            <div>🏫 <strong>Landmark:</strong> Near Police Chowki, Opp. Bharat International School</div>
+            <div>👤 <strong>Owner:</strong> Jony Kumar</div>
+            <div>📞 <strong>Phone:</strong> <a href="tel:8650391978">8650391978</a></div>
+          </div>
+        </div>
+
+        <div>
+          <a class="btn btn-primary" href="https://maps.app.goo.gl/kJbjvxd15yig2YH39?g_st=awb" target="_blank" rel="noopener noreferrer">
+            📍 Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>JM Kalshyan Fitness</strong><br>
+    Train • Transform • Repeat<br><br>
+    &copy; 2026 JM Kalshyan Fitness. All Rights Reserved. | Designed by Anshul Khatiyan
+  </footer>
+
+  <script>
+
+    /* ===== MEMBER FEE PORTAL =====
+       After creating the Supabase project, replace these two values.
+       The anon key is designed for browser use when Row Level Security is configured correctly.
+    */
+    const SUPABASE_URL = "https://pebtoynxxoqagsgdocnf.supabase.co";
+    const SUPABASE_ANON_KEY = "sb_publishable_-611S6bVByEKVupn8S_OJw_s95F4KUC";
+
+    const memberResult = document.getElementById("memberResult");
+    const checkMemberBtn = document.getElementById("checkMemberBtn");
+    const memberConfigWarning = document.getElementById("memberConfigWarning");
+
+
+
+    function supabaseReady() {
+      return SUPABASE_URL.startsWith("https://") &&
+             !SUPABASE_URL.includes("PASTE_") &&
+             SUPABASE_ANON_KEY.length > 20 &&
+             !SUPABASE_ANON_KEY.includes("PASTE_");
+    }
+
+    function showMemberMessage(message, isError = false) {
+      memberResult.className = "member-result" + (isError ? "" : " empty");
+      memberResult.innerHTML = isError
+        ? `<div class="member-error">${message}</div>`
+        : message;
+    }
+
+    function safeDate(value) {
+      if (!value) return "—";
+      const d = new Date(value + "T00:00:00");
+      if (Number.isNaN(d.getTime())) return value;
+      return d.toLocaleDateString("en-IN", {
+        day: "2-digit", month: "short", year: "numeric"
+      });
+    }
+
+    let submittedMobileNumber = "";
+
+    function renderMember(member) {
+      const currentPaid = member.current_fee_paid === true;
+      const oldDue = Number(member.old_due || 0);
+      const currentFee = Number(member.fee || 0);
+      const totalDue = oldDue + (currentPaid ? 0 : currentFee);
+
+      memberResult.className = "member-result";
+      memberResult.innerHTML = `
+        <div class="result-label">MEMBERSHIP STATUS</div>
+        <h3>${member.name || "Member"}</h3>
+
+        <div class="member-status ${currentPaid ? "paid" : "due"}">
+          ${currentPaid ? "✓ PAYMENT PAID" : "⚠ PAYMENT DUE"}
+        </div>
+
+        <div class="member-details">
+          <div class="member-detail">
+            <span>Member ID</span>
+            <strong>${member.member_id || "—"}</strong>
+          </div>
+          <div class="member-detail">
+            <span>Village</span>
+            <strong>${member.village || "—"}</strong>
+          </div>
+          <div class="member-detail">
+            <span>Mobile Number</span>
+            <strong>${member.mobile_number || submittedMobileNumber || "—"}</strong>
+          </div>
+          <div class="member-detail">
+            <span>Date of Joining</span>
+            <strong>${member.joining_date ? new Date(member.joining_date + "T00:00:00").toLocaleDateString("en-IN") : "—"}</strong>
+          </div>
+          <div class="member-detail">
+            <span>Monthly Fee</span>
+            <strong>₹${currentFee.toLocaleString("en-IN")}</strong>
+          </div>
+          <div class="member-detail">
+            <span>Current Month</span>
+            <strong>${currentPaid ? "Paid" : "Due"}</strong>
+          </div>
+          <div class="member-detail">
+            <span>Old Due</span>
+            <strong>₹${oldDue.toLocaleString("en-IN")}</strong>
+          </div>
+          <div class="member-detail total-due">
+            <span>Total Amount Due</span>
+            <strong>₹${totalDue.toLocaleString("en-IN")}</strong>
+          </div>
+        </div>
+
+        <p class="member-note">
+          ${totalDue > 0
+            ? `Total amount currently due: <strong>₹${totalDue.toLocaleString("en-IN")}</strong>. Please contact the gym for payment.`
+            : "Your membership fee is fully up to date."}
+        </p>
+      `;
+    }
+
+    async function checkMember() {
+      const memberName = document.getElementById("memberName").value.trim();
+      const mobileNumber = document.getElementById("memberMobile").value.trim();
+
+      // Name is optional. Full mobile number is required.
+      if (!/^\d{10}$/.test(mobileNumber)) {
+        showMemberMessage("Please enter the complete 10-digit registered mobile number.", true);
+        return;
+      }
+
+      if (!supabaseReady()) {
+        memberConfigWarning.hidden = false;
+        showMemberMessage("The member portal is not connected to the database yet. Complete the Supabase setup first.", true);
+        return;
+      }
+
+      checkMemberBtn.disabled = true;
+      checkMemberBtn.textContent = "Checking…";
+      showMemberMessage("Checking your membership…");
+
+      try {
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/rpc/check_member_status`, {
+          method: "POST",
+          headers: {
+            "apikey": SUPABASE_ANON_KEY,
+            "Authorization": `Bearer ${SUPABASE_ANON_KEY}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            p_name: memberName || null,
+            p_mobile_number: mobileNumber
+          })
+        });
+
+        if (!response.ok) {
+          const errorText = await response.text();
+          console.error("Member lookup error:", errorText);
+          throw new Error("Unable to check membership.");
+        }
+
+        let data = await response.json();
+
+        // If a member entered a first name (for example "Sawan") while the
+        // database stores the full name (for example "Sawan Namdev"), retry
+        // using the mobile number only. Mobile number is the required
+        // identifier, while the name is an additional check.
+        if ((!data || (Array.isArray(data) && data.length === 0)) && memberName) {
+          const mobileOnlyResponse = await fetch(`${SUPABASE_URL}/rest/v1/rpc/check_member_status`, {
+            method: "POST",
+            headers: {
+              "apikey": SUPABASE_ANON_KEY,
+              "Authorization": `Bearer ${SUPABASE_ANON_KEY}`,
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              p_name: null,
+              p_mobile_number: mobileNumber
+            })
+          });
+
+          if (mobileOnlyResponse.ok) {
+            data = await mobileOnlyResponse.json();
+          }
+        }
+
+        if (!data || (Array.isArray(data) && data.length === 0)) {
+          showMemberMessage(
+            "No member was found with that mobile number. Please check the number or contact the gym.",
+            true
+          );
+          document.getElementById("memberResult").scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+          });
+          return;
+        }
+
+        if (Array.isArray(data) && data.length > 1) {
+          showMemberMessage("More than one member matched these details. Please contact the gym.", true);
+          return;
+        }
+
+        renderMember(Array.isArray(data) ? data[0] : data);
+
+        // Bring the fee result into view automatically after checking.
+        document.getElementById("memberResult").scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      } catch (error) {
+        showMemberMessage("We could not check your status right now. Please try again or contact the gym.", true);
+        console.error(error);
+      } finally {
+        checkMemberBtn.disabled = false;
+        checkMemberBtn.textContent = "Check Fee Status →";
+      }
+    }
+
+
+    checkMemberBtn.addEventListener("click", checkMember);
+    document.getElementById("memberName").addEventListener("keydown", e => {
+      if (e.key === "Enter") checkMember();
+    });
+
+    document.getElementById("memberMobile").addEventListener("keydown", e => {
+      if (e.key === "Enter") checkMember();
+    });
+    document.getElementById("memberName").addEventListener("input", e => {
+      e.target.value = e.target.value.replace(/[^a-zA-Z .'-]/g, "").slice(0, 100);
+    });
+
+    document.getElementById("memberMobile").addEventListener("input", e => {
+      e.target.value = e.target.value.replace(/\D/g, "").slice(0, 10);
+    });
+
+    if (!supabaseReady()) memberConfigWarning.hidden = false;
+
+
+    // Mobile navigation
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const navLinks = document.querySelector(".nav-links");
+
+    function closeMobileMenu() {
+      if (!mobileMenuBtn || !navLinks) return;
+      mobileMenuBtn.classList.remove("open");
+      navLinks.classList.remove("mobile-open");
+      mobileMenuBtn.setAttribute("aria-expanded", "false");
+      mobileMenuBtn.setAttribute("aria-label", "Open menu");
+    }
+
+    if (mobileMenuBtn && navLinks) {
+      mobileMenuBtn.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("mobile-open");
+        mobileMenuBtn.classList.toggle("open", isOpen);
+        mobileMenuBtn.setAttribute("aria-expanded", String(isOpen));
+        mobileMenuBtn.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      });
+
+      navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeMobileMenu);
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 850) closeMobileMenu();
+      });
+    }
+
+    // Smooth automatic gallery movement
+    const gallery = document.getElementById("galleryScroll");
+    let scrollX = 0;
+
+    function autoScrollGallery() {
+      if (gallery && !gallery.matches(":hover")) {
+        scrollX += 0.7;
+        gallery.scrollLeft = scrollX;
+        if (scrollX >= gallery.scrollWidth - gallery.clientWidth) scrollX = 0;
+      }
+    }
+    setInterval(autoScrollGallery, 25);
+
+    // Sticky navigation state
+    const navbar = document.querySelector(".navbar");
+    function updateNavbar() {
+      navbar.classList.toggle("scrolled", window.scrollY > 20);
+    }
+    window.addEventListener("scroll", updateNavbar, { passive: true });
+    updateNavbar();
+
+    // Scroll progress indicator
+    const progress = document.getElementById("scrollProgress");
+    function updateProgress() {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - doc.clientHeight;
+      progress.style.width = max > 0 ? ((window.scrollY / max) * 100) + "%" : "0%";
+    }
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    updateProgress();
+
+
+    // Click-to-expand facility explanations
+    document.querySelectorAll(".facility-card").forEach(card => {
+      const toggle = () => {
+        const isOpen = card.classList.toggle("open");
+        card.setAttribute("aria-expanded", String(isOpen));
+      };
+
+      card.addEventListener("click", toggle);
+      card.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          toggle();
+        }
+      });
+    });
+
+    // Scroll-reveal animations
+    const revealItems = document.querySelectorAll(
+      ".reveal, .about-copy, .quote-card, .card, .price-card, .contact-box"
+    );
+
+    revealItems.forEach((el, index) => {
+      if (!el.classList.contains("reveal")) el.classList.add("reveal");
+      el.style.transitionDelay = Math.min(index * 35, 180) + "ms";
+    });
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
